@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+
+@layer components { 
+    .nav-pill { 
+      @apply hover:bg-white hover:text-black py-2 sm:px-5 rounded-4xl  ; 
+    } 
+    .nav-pill-active { 
+      @apply bg-white text-black py-2 px-2 sm:px-5 rounded-4xl
+    } 
+  } 
+
+  @layer components { 
+    .nav {
+        @apply  bg-black text-white flex  items-center justify-center lg:mx-20  rounded-b-full fixed top-0 right-0 left-0
+    }
+    .main-text 
+    { @apply sm:mt-10 mt-20 sm:p-20 p-4 min-h-screen flex-col justify-center items-center scroll-mt-25 } 
+
+    .main-heading{
+       @apply text-2xl text-center sm:text-left sm:text-4xl font-extrabold
+    }
+
+    .sub-heading{
+        @apply mt-10 text-2xl sm:text-4xl font-extrabold
+    }
+
+    .conclusion{
+        @apply text-xl sm:text-2xl
+    }
+
+    .list-heading{
+        @apply text-xl sm:text-2xl my-5 font-bold
+    }
+}
