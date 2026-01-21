@@ -14,8 +14,13 @@
     .nav {
         @apply  bg-black text-white flex  items-center justify-center lg:mx-20  rounded-b-full fixed top-0 right-0 left-0
     }
+
+    .mobile-menu{
+        @apply  absolute right-10 top-4 text-2xl
+    }
+    
     .main-text 
-    { @apply sm:mt-10 mt-20 sm:p-20 p-4 min-h-screen flex-col justify-center items-center scroll-mt-25 } 
+    { @apply sm:mt-2 mt-20 sm:p-20 p-4 min-h-screen flex-col justify-center items-center scroll-mt-20 } 
 
     .main-heading{
        @apply text-2xl text-center sm:text-left sm:text-4xl font-extrabold

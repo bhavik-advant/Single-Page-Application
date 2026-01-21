@@ -1,18 +1,33 @@
-let pill = document.querySelectorAll("#nav-pills .nav-pill")
-// console.log("print pill");
 
-console.log(pill);
-let activePill = null;
 
-pill.forEach((node)=>{
-    node.addEventListener(("click"), function(e){
-        if (activePill) {
-            // console.log(activePill);
-            activePill.classList.remove('nav-pill-active');
+const desktopPills = document.querySelectorAll('#nav-pills .nav-pill');
+const mobilePills = document.querySelectorAll('#mobile-nav-pills .nav-pill');
+
+
+let activeDesktopPill = null;
+desktopPills.forEach((node) => {
+    node.addEventListener("click", function (e) {
+        if (activeDesktopPill) {
+            activeDesktopPill.classList.remove('nav-pill-active');
         }
-        // console.log("print node"); 
-        // console.log(e.target);
-        e.target.classList.add("nav-pill-active")
-        activePill = e.target
-    } )
-})
+        node.classList.add('nav-pill-active');
+        activeDesktopPill = node;
+    });
+});
+
+
+let activeMobilePill = null;
+mobilePills.forEach((node) => {
+    node.addEventListener("click", function (e) {
+        if (activeMobilePill) {
+            activeMobilePill.classList.remove('nav-pill-active');
+        }
+        node.classList.add('nav-pill-active');
+        activeMobilePill = node;
+    });
+});
+
+
+document.querySelector('.mobile-menu').addEventListener('click', function() {
+    document.getElementById('mobile-nav-pills').classList.toggle('hidden');
+});
