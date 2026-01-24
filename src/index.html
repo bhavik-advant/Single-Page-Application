@@ -6,297 +6,621 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task 1 - Single Page Application</title>
     <link rel="stylesheet" href="./output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-gray-900 text-white">
     <div class="container ">
-        <nav
-        class="nav hidden sm:block shadow-lg shadow-blue-400">
-        <ul id="nav-pills" class=" flex justify-evenly md:gap-10 lg:gap-15 gap-2 h-20  items-center text-sm sm:text-lg">
-            <li class=" nav-pill"><a href="#home">Home</a></li>
-            <li class=" nav-pill"><a href="#html">HTML</a></li>
-            <li class=" nav-pill"><a href="#css">CSS</a></li>
-            <li class=" nav-pill"><a href="#js">JavaScript</a></li>
-            <li class=" nav-pill"><a href="#resources">Resources</a></li>
-        </ul>
-    </nav>
-        <nav
-        class="bg-black text-white  fixed top-0 right-0 left-0 pr-10 p-4 h-15 block sm:hidden flex items-center">
-    <div class="w-full p-6">
-        <h1 class=" text-2xl" >SPA</h1>
-        <i class="fa-notdog fa-solid fa-bars mobile-menu"></i>
-    </div>
-        <ul id="mobile-nav-pills" class="hidden justify-evenly md:gap-10 lg:gap-15 gap-2 h-50 items-center text-center text-sm sm:text-lg bg-black absolute top-full left-0 right-0 z-50">
-            <li class="nav-pill "><a href="#home">Home</a></li>
-            <li class="nav-pill"><a href="#html">HTML</a></li>
-            <li class="nav-pill"><a href="#css">CSS</a></li> 
-            <li class="nav-pill"><a href="#js">JavaScript</a></li>
-            <li class="nav-pill"><a href="#resources">Resources</a></li>
-        </ul>
-    </nav>
-    <!-- // Home -->
-    <section id="home" class="main-text  ">
-
-       <div>
-        <h1 class="main-heading text-amber-500 text-shadow-sm text-shadow-amber-200">What this Roadmap is About</h1>
-
-        <h4 class="mt-10 text-amber-100">This learning roadmap is designed to guide beginners through the fundamentals of web
-            development. It
-            explains the core technologies used to build modern websites and how they work together.</h4>
-
-        <h1 class=" sub-heading text-amber-500">Who This is For</h1>
-
-        <div class="mt-10 gap-10">
-            <h3 class="list-heading text-amber-200">This roadmap is ideal for:</h3>
-            <ul class="list-disc pl-10 my-5 text-amber-100">
-                <li class="my-5">Beginners who are new to web development</li>
-                <li>Students learning HTML, CSS, and JavaScript</li>
-                <li class="my-5">Anyone who wants a clear learning path before building projects</li>
+        <nav class="nav hidden sm:block shadow-lg shadow-blue-400">
+            <ul id="nav-pills"
+                class=" flex justify-evenly md:gap-10 lg:gap-15 gap-2 h-20  items-center text-sm sm:text-lg">
+                <li class=" nav-pill"><a href="#home">Home</a></li>
+                <li class=" nav-pill"><a href="#html">HTML</a></li>
+                <li class=" nav-pill"><a href="#css">CSS</a></li>
+                <li class=" nav-pill"><a href="#js">JavaScript</a></li>
+                <li class=" nav-pill"><a href="#resources">Resources</a></li>
             </ul>
-            <h4 class="conclusion text-amber-300">By following this roadmap, learners can gradually build strong web fundamentals.</h4>
-        </div>
-       </div>
-       <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center">
-        <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-amber-200" src="../public/images/roadmap.png" alt="image">
-       </div>
-
-    </section>
-    
-
-    <!-- // HTML -->
-    <section id="html" class="main-text ">
-
-        <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center ">
-            <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-amber-600" src="../public/images/html5.jpg" alt="image">
-           </div>
-
-        <div>
-            <h1 class="main-heading text-orange-400 text-shadow-sm text-shadow-orange-200">Basics of HTML</h1>
-
-        <h4 class="mt-5 text-orange-100">HTML (HyperText Markup Language) is the standard language used to create the structure of a
-            webpage. It defines the content such as text, images, links, and buttons.</h4>
-        <h4 class="text-orange-100">
-            HTML uses elements to tell the browser how content should be displayed.
-        </h4>
-
-        <div class="mt-5 gap-10">
-            <h3 class="list-heading text-orange-300">Common HTML Tags</h3>
-            <h4 class="text-orange-200">Some commonly used HTML tags include:</h4>
-            <ul class="list-disc pl-10 my-5 text-orange-100">
-                <li class="my-5">Headings for titles and subtitles</li>
-                <li>Paragraphs for text content</li>
-                <li class="my-5">Links to navigate between pages</li>
-                <li>Images to display visuals</li>
-                <li class="my-5">Lists to organize content</li>
-            </ul>
-            <h4 class="conclusion text-orange-300">These tags form the basic building blocks of every website.</h4>
-        </div>
-        <div class="mt-5 gap-10">
-            <h3 class="list-heading text-orange-300">Page Structure Overview</h3>
-            <h4 class="text-orange-200">A basic HTML page contains:</h4>
-            <ul class="list-disc pl-10 my-5 text-orange-100">
-                <li class="my-5">A head section for metadata</li>
-                <li>A body section where visible content appears</li>
-                <li class="my-5">Structured elements like headers, sections, and footers</li>
-            </ul>
-            <h4 class="conclusion text-orange-300">Proper structure helps in readability, accessibility, and SEO.</h4>
-        </div>
-
-        </div>
-        
-
-    </section>
-
-    <!-- // CSS -->
-    <section id="css" class="main-text ">
-
-        <div>
-            <h1 class="main-heading text-blue-500 text-shadow-sm text-shadow-blue-200">Styling Concepts</h1>
-
-        <h4 class="mt-5 text-blue-100">CSS (Cascading Style Sheets) is used to style HTML elements. It controls how a webpage looks,
-            including colors, fonts, spacing, and alignment.</h4>
-        <h4 class="text-blue-100">
-            CSS helps turn a plain HTML page into a visually appealing website.
-        </h4>
-
-        <div class="mt-5 gap-10">
-            <h3 class="list-heading text-blue-300">Layout Systems</h3>
-            <h4 class="text-blue-200">CSS provides different layout systems to organize content:</h4>
-            <ul class="list-disc pl-10 my-5 text-blue-100">
-                <li class="my-5">Flexbox for one-dimensional layouts</li>
-                <li>Grid for two-dimensional layouts</li>
-                <li class="my-5">Positioning for placing elements precisely</li>
-            </ul>
-            <h4 class="conclusion text-blue-300">These systems help create responsive and well-structured designs.</h4>
-        </div>
-        <div class="mt-5 gap-10">
-            <h3 class="list-heading text-blue-300">Colors & Fonts</h3>
-            <h4 class="text-blue-200">CSS allows you to:</h4>
-            <ul class="list-disc pl-10 my-5 text-blue-100">
-                <li class="my-5">Apply colors to text, backgrounds, and borders</li>
-                <li>Choose fonts and control their size and spacing</li>
-                <li class="my-5">Maintain visual consistency across the website</li>
-            </ul>
-            <h4 class="conclusion text-blue-300">Good color and font choices improve user experience.</h4>
-        </div>
-        </div>
-
-        <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center">
-            <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-blue-400" src="../public/images/css.png" alt="image">
-           </div>
-
-    </section>
-
-    <!-- // JavaScript -->
-    <section id="js" class="main-text ">
-
-        <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center">
-            <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-yellow-300" src="../public/images/js.png" alt="image">
-           </div>
-
-        <div>
-            <h1 class="main-heading text-yellow-600 text-shadow-sm text-shadow-yellow-100">What JavaScript Does</h1>
-
-        <h4 class="mt-5 text-yellow-100">JavaScript is a programming language that adds interactivity to websites. It allows web pages
-            to respond to user actions such as clicks, scrolls, and form submissions.</h4>
-        <h4 class="text-yellow-100">
-            Without JavaScript, websites would be static and non-interactive.
-        </h4>
-
-        <div class="mt-5 gap-10">
-            <h3 class="list-heading text-yellow-300">Interactivity Examples</h3>
-            <h4 class="text-yellow-200"> JavaScript can be used to:</h4>
-            <ul class="list-disc pl-10 my-5 text-yellow-100">
-                <li class="my-5">Show or hide content</li>
-                <li>Validate forms</li>
-                <li class="my-5">Create sliders and dropdown menus</li>
-                <li>Update content without reloading the page</li>
-            </ul>
-            <h4 class="conclusion text-yellow-200">These features make websites dynamic and user-friendly.</h4>
-        </div>
-        <div class="mt-5 gap-10">
-            <h3 class="text-2xl my-5 text-yellow-300">DOM Basics</h3>
-            <h4 class="text-yellow-100">The DOM (Document Object Model) represents the structure of a webpage as objects. JavaScript can access
-                and modify these objects to change content, styles, and behavior dynamically.</h4>
-
-            <h4 class="conclusion mt-5 text-yellow-200">DOM manipulation is a core concept in interactive web development.</h4>
-        </div>
-        </div>
-
-       
-
-    </section>
-
-    <!-- //resources -->
-    <section id="resources" class="main-text ">
-
-        <div>
-            <h1 class="main-heading  text-teal-600 text-shadow-sm text-shadow-teal-100">Resources</h1>
-
-        <div class="mt-5 gap-10">
-            <h3 class="list-heading text-teal-400">Useful Learning Links</h3>
-            <h4 class="conclusion text-teal-100">These websites provide reliable tutorials and documentation for learning web development:</h4>
-            <ul class="list-disc pl-10 my-5 text-teal-50">
-                <li class="my-5">
-                    <ul>
-                        <li>
-                            MDN Web Docs
-                        </li>
-                        <li>
-                            <a class="text-blue-500" href="https://developer.mozilla.org">https://developer.mozilla.org</a>
-                        </li>
-                        <li>
-                            Comprehensive and beginner-friendly documentation for HTML, CSS, and JavaScript.
-                        </li>
-                    </ul>
-                </li>
-                <li class="my-5">
-                    <ul>
-                        <li>
-                            W3Schools
-                        </li>
-                        <li>
-                            <a class="text-blue-500" href="https://www.w3schools.com">https://www.w3schools.com</a>
-                        </li>
-                        <li>
-                            Easy explanations with examples and quick references.
-                        </li>
-                    </ul>
-                </li>
-                <li class="my-5">
-                    <ul>
-                        <li>
-                            freeCodeCamp
-                        </li>
-                        <li>
-                            <a class="text-blue-500" href="https://www.freecodecamp.org">https://www.freecodecamp.org</a>
-                        </li>
-                        <li>
-                            Free interactive lessons and certifications for web development.
-                        </li>
-                    </ul>
-                </li>
-                
-            </ul>
+        </nav>
+        <nav class="bg-black text-white  fixed top-0 right-0 left-0 pr-10 p-4 h-15 block sm:hidden flex items-center">
+            <div class="w-full p-6">
+                <h1 class=" text-2xl">SPA</h1>
+                <i class="fa-notdog fa-solid fa-bars mobile-menu"></i>
             </div>
-        <div class="mt-5 gap-10">
-            <h3 class="list-heading text-teal-400">Practice Platforms</h3>
-            <h4 class="conclusion text-teal-100">Practicing regularly helps strengthen concepts and improve confidence:</h4>
-            <ul class="list-disc pl-10 my-5 text-teal-50">
-                <li class="my-5">
-                    <ul>
-                        <li>
-                            freeCodeCamp Practice
-                        </li>
-                        <li>
-                            <a class="text-blue-500" href="https://www.freecodecamp.org/learn">https://www.freecodecamp.org/learn</a>
-                        </li>
-                        <li>
-                            Hands-on coding challenges and projects.
-                        </li>
-                    </ul>
-                </li>
-                <li class="my-5">
-                    <ul>
-                        <li>
-                            CodePen
-                        </li>
-                        <li>
-                            <a class="text-blue-500" href="https://codepen.io">https://codepen.io</a>
-                        </li>
-                        <li>
-                            Online editor to practice HTML, CSS, and JavaScript together.
-                        </li>
-                    </ul>
-                </li>
-                <li class="my-5">
-                    <ul>
-                        <li>
-                            JSFiddle
-                        </li>
-                        <li>
-                            <a class="text-blue-500" href="https://jsfiddle.net">https://jsfiddle.net</a>
-                        </li>
-                        <li>
-                            Useful for testing JavaScript and small experiments.
-                        </li>
-                    </ul>
-                </li>
-                
+            <ul id="mobile-nav-pills"
+                class="hidden justify-evenly md:gap-10 lg:gap-15 gap-2 h-50 items-center text-center text-sm sm:text-lg bg-black absolute top-full left-0 right-0 z-50">
+                <li class="nav-pill "><a href="#homeMobile">Home</a></li>
+                <li class="nav-pill"><a href="#htmlMobile">HTML</a></li>
+                <li class="nav-pill"><a href="#cssMobile">CSS</a></li>
+                <li class="nav-pill"><a href="#jsMobile">JavaScript</a></li>
+                <li class="nav-pill"><a href="#resourcesMobile">Resources</a></li>
             </ul>
-            </div>
+        </nav>
+        <!-- // Home for large screen sizes -->
+        <div class="hidden lg:block">
+            <section id="home" class="main-text   ">
+
+                <div>
+                    <h1 class="main-heading text-amber-500 text-shadow-sm text-shadow-amber-200">What this Roadmap is
+                        About</h1>
+
+                    <h4 class="mt-10 text-amber-100">This learning roadmap is designed to guide beginners through the
+                        fundamentals of web
+                        development. It
+                        explains the core technologies used to build modern websites and how they work together.</h4>
+
+                    <h1 class=" sub-heading text-amber-500">Who This is For</h1>
+
+                    <div class="mt-10 gap-10">
+                        <h3 class="list-heading text-amber-200">This roadmap is ideal for:</h3>
+                        <ul class="list-disc pl-10 my-5 text-amber-100">
+                            <li class="my-5">Beginners who are new to web development</li>
+                            <li>Students learning HTML, CSS, and JavaScript</li>
+                            <li class="my-5">Anyone who wants a clear learning path before building projects</li>
+                        </ul>
+                        <h4 class="conclusion text-amber-300">By following this roadmap, learners can gradually build
+                            strong web fundamentals.</h4>
+                    </div>
+                </div>
+                <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center">
+                    <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-amber-200"
+                        src="../public/images/roadmap.png" alt="image">
+                </div>
+
+            </section>
         </div>
 
-        <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center">
-            <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-teal-300" src="../public/images/resource.webp" alt="image">
-           </div>
+        <!-- // Home for mobile and tablet screen sizes -->
+        <div class="block lg:hidden ">
+            <section id="homeMobile home" class="main-text   ">
 
-    </section>
+                <div>
+                    <h1 class="main-heading text-amber-500 text-shadow-sm text-shadow-amber-200">What this Roadmap is
+                        About</h1>
+
+                    <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center mt-5">
+                        <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-amber-200"
+                            src="../public/images/roadmap.png" alt="image">
+                    </div>
+
+                    <h4 class="mt-10 text-amber-100">This learning roadmap is designed to guide beginners through the
+                        fundamentals of web
+                        development. It
+                        explains the core technologies used to build modern websites and how they work together.</h4>
+
+                    <h1 class=" sub-heading text-amber-500">Who This is For</h1>
+
+                    <div class="mt-10 gap-10">
+                        <h3 class="list-heading text-amber-200">This roadmap is ideal for:</h3>
+                        <ul class="list-disc pl-10 my-5 text-amber-100">
+                            <li class="my-5">Beginners who are new to web development</li>
+                            <li>Students learning HTML, CSS, and JavaScript</li>
+                            <li class="my-5">Anyone who wants a clear learning path before building projects</li>
+                        </ul>
+                        <h4 class="conclusion text-amber-300">By following this roadmap, learners can gradually build
+                            strong web fundamentals.</h4>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+
+
+        <!-- // HTML -->
+        <div class="hidden lg:block">
+            <section id="html" class="main-text ">
+
+                <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center ">
+                    <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-amber-600"
+                        src="../public/images/html5.jpg" alt="image">
+                </div>
+
+                <div>
+                    <h1 class="main-heading text-orange-400 text-shadow-sm text-shadow-orange-200">Basics of HTML</h1>
+
+                    <h4 class="mt-5 text-orange-100">HTML (HyperText Markup Language) is the standard language used to
+                        create the structure of a
+                        webpage. It defines the content such as text, images, links, and buttons.</h4>
+                    <h4 class="text-orange-100">
+                        HTML uses elements to tell the browser how content should be displayed.
+                    </h4>
+
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-orange-300">Common HTML Tags</h3>
+                        <h4 class="text-orange-200">Some commonly used HTML tags include:</h4>
+                        <ul class="list-disc pl-10 my-5 text-orange-100">
+                            <li class="my-5">Headings for titles and subtitles</li>
+                            <li>Paragraphs for text content</li>
+                            <li class="my-5">Links to navigate between pages</li>
+                            <li>Images to display visuals</li>
+                            <li class="my-5">Lists to organize content</li>
+                        </ul>
+                        <h4 class="conclusion text-orange-300">These tags form the basic building blocks of every
+                            website.</h4>
+                    </div>
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-orange-300">Page Structure Overview</h3>
+                        <h4 class="text-orange-200">A basic HTML page contains:</h4>
+                        <ul class="list-disc pl-10 my-5 text-orange-100">
+                            <li class="my-5">A head section for metadata</li>
+                            <li>A body section where visible content appears</li>
+                            <li class="my-5">Structured elements like headers, sections, and footers</li>
+                        </ul>
+                        <h4 class="conclusion text-orange-300">Proper structure helps in readability, accessibility, and
+                            SEO.</h4>
+                    </div>
+
+                </div>
+
+
+            </section>
+        </div>
+
+        <div class="block lg:hidden">
+            <section id="htmlMobile html" class="main-text ">
+
+                <div>
+                    <h1 class="main-heading text-orange-400 text-shadow-sm text-shadow-orange-200">Basics of HTML</h1>
+
+                    <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center mt-5">
+                        <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-amber-600"
+                            src="../public/images/html5.jpg" alt="image">
+                    </div>
+
+                    <h4 class="mt-5 text-orange-100">HTML (HyperText Markup Language) is the standard language used to
+                        create the structure of a
+                        webpage. It defines the content such as text, images, links, and buttons.</h4>
+                    <h4 class="text-orange-100">
+                        HTML uses elements to tell the browser how content should be displayed.
+                    </h4>
+
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-orange-300">Common HTML Tags</h3>
+                        <h4 class="text-orange-200">Some commonly used HTML tags include:</h4>
+                        <ul class="list-disc pl-10 my-5 text-orange-100">
+                            <li class="my-5">Headings for titles and subtitles</li>
+                            <li>Paragraphs for text content</li>
+                            <li class="my-5">Links to navigate between pages</li>
+                            <li>Images to display visuals</li>
+                            <li class="my-5">Lists to organize content</li>
+                        </ul>
+                        <h4 class="conclusion text-orange-300">These tags form the basic building blocks of every
+                            website.</h4>
+                    </div>
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-orange-300">Page Structure Overview</h3>
+                        <h4 class="text-orange-200">A basic HTML page contains:</h4>
+                        <ul class="list-disc pl-10 my-5 text-orange-100">
+                            <li class="my-5">A head section for metadata</li>
+                            <li>A body section where visible content appears</li>
+                            <li class="my-5">Structured elements like headers, sections, and footers</li>
+                        </ul>
+                        <h4 class="conclusion text-orange-300">Proper structure helps in readability, accessibility, and
+                            SEO.</h4>
+                    </div>
+
+                </div>
+
+
+            </section>
+        </div>
+
+        <!-- // CSS -->
+        <div class="hidden lg:block">
+            <section id="css" class="main-text ">
+
+                <div>
+                    <h1 class="main-heading text-blue-500 text-shadow-sm text-shadow-blue-200">Styling Concepts</h1>
+
+                    <h4 class="mt-5 text-blue-100">CSS (Cascading Style Sheets) is used to style HTML elements. It
+                        controls how a webpage looks,
+                        including colors, fonts, spacing, and alignment.</h4>
+                    <h4 class="text-blue-100">
+                        CSS helps turn a plain HTML page into a visually appealing website.
+                    </h4>
+
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-blue-300">Layout Systems</h3>
+                        <h4 class="text-blue-200">CSS provides different layout systems to organize content:</h4>
+                        <ul class="list-disc pl-10 my-5 text-blue-100">
+                            <li class="my-5">Flexbox for one-dimensional layouts</li>
+                            <li>Grid for two-dimensional layouts</li>
+                            <li class="my-5">Positioning for placing elements precisely</li>
+                        </ul>
+                        <h4 class="conclusion text-blue-300">These systems help create responsive and well-structured
+                            designs.</h4>
+                    </div>
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-blue-300">Colors & Fonts</h3>
+                        <h4 class="text-blue-200">CSS allows you to:</h4>
+                        <ul class="list-disc pl-10 my-5 text-blue-100">
+                            <li class="my-5">Apply colors to text, backgrounds, and borders</li>
+                            <li>Choose fonts and control their size and spacing</li>
+                            <li class="my-5">Maintain visual consistency across the website</li>
+                        </ul>
+                        <h4 class="conclusion text-blue-300">Good color and font choices improve user experience.</h4>
+                    </div>
+                </div>
+
+                <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center">
+                    <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-blue-400"
+                        src="../public/images/css.png" alt="image">
+                </div>
+
+            </section>
+        </div>
+
+        <div class="block lg:hidden">
+            <section id="cssMobile" class="main-text ">
+
+                <div>
+                    <h1 class="main-heading text-blue-500 text-shadow-sm text-shadow-blue-200">Styling Concepts</h1>
+                    <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center mt-5">
+                        <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-blue-400"
+                            src="../public/images/css.png" alt="image">
+                    </div>
+
+                    <h4 class="mt-5 text-blue-100">CSS (Cascading Style Sheets) is used to style HTML elements. It
+                        controls how a webpage looks,
+                        including colors, fonts, spacing, and alignment.</h4>
+                    <h4 class="text-blue-100">
+                        CSS helps turn a plain HTML page into a visually appealing website.
+                    </h4>
+
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-blue-300">Layout Systems</h3>
+                        <h4 class="text-blue-200">CSS provides different layout systems to organize content:</h4>
+                        <ul class="list-disc pl-10 my-5 text-blue-100">
+                            <li class="my-5">Flexbox for one-dimensional layouts</li>
+                            <li>Grid for two-dimensional layouts</li>
+                            <li class="my-5">Positioning for placing elements precisely</li>
+                        </ul>
+                        <h4 class="conclusion text-blue-300">These systems help create responsive and well-structured
+                            designs.</h4>
+                    </div>
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-blue-300">Colors & Fonts</h3>
+                        <h4 class="text-blue-200">CSS allows you to:</h4>
+                        <ul class="list-disc pl-10 my-5 text-blue-100">
+                            <li class="my-5">Apply colors to text, backgrounds, and borders</li>
+                            <li>Choose fonts and control their size and spacing</li>
+                            <li class="my-5">Maintain visual consistency across the website</li>
+                        </ul>
+                        <h4 class="conclusion text-blue-300">Good color and font choices improve user experience.</h4>
+                    </div>
+                </div>
+
+
+
+            </section>
+        </div>
+        <!-- // JavaScript -->
+        <div class="hidden lg:block">
+            <section id="js" class="main-text ">
+
+                <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center">
+                    <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-yellow-300"
+                        src="../public/images/js.png" alt="image">
+                </div>
+
+                <div>
+                    <h1 class="main-heading text-yellow-600 text-shadow-sm text-shadow-yellow-100">What JavaScript Does
+                    </h1>
+
+                    <h4 class="mt-5 text-yellow-100">JavaScript is a programming language that adds interactivity to
+                        websites. It allows web pages
+                        to respond to user actions such as clicks, scrolls, and form submissions.</h4>
+                    <h4 class="text-yellow-100">
+                        Without JavaScript, websites would be static and non-interactive.
+                    </h4>
+
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-yellow-300">Interactivity Examples</h3>
+                        <h4 class="text-yellow-200"> JavaScript can be used to:</h4>
+                        <ul class="list-disc pl-10 my-5 text-yellow-100">
+                            <li class="my-5">Show or hide content</li>
+                            <li>Validate forms</li>
+                            <li class="my-5">Create sliders and dropdown menus</li>
+                            <li>Update content without reloading the page</li>
+                        </ul>
+                        <h4 class="conclusion text-yellow-200">These features make websites dynamic and user-friendly.
+                        </h4>
+                    </div>
+                    <div class="mt-5 gap-10">
+                        <h3 class="text-2xl my-5 text-yellow-300">DOM Basics</h3>
+                        <h4 class="text-yellow-100">The DOM (Document Object Model) represents the structure of a
+                            webpage as objects. JavaScript can access
+                            and modify these objects to change content, styles, and behavior dynamically.</h4>
+
+                        <h4 class="conclusion mt-5 text-yellow-200">DOM manipulation is a core concept in interactive
+                            web development.</h4>
+                    </div>
+                </div>
+
+
+
+            </section>
+        </div>
+
+        <div class="block lg:hidden">
+            <section id="jsMobile" class="main-text ">
+                <div>
+                    <h1 class="main-heading text-yellow-600 text-shadow-sm text-shadow-yellow-100">What JavaScript Does
+                    </h1>
+                    <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center mt-5">
+                        <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-yellow-300"
+                            src="../public/images/js.png" alt="image">
+                    </div>
+
+                    <h4 class="mt-5 text-yellow-100">JavaScript is a programming language that adds interactivity to
+                        websites. It allows web pages
+                        to respond to user actions such as clicks, scrolls, and form submissions.</h4>
+                    <h4 class="text-yellow-100">
+                        Without JavaScript, websites would be static and non-interactive.
+                    </h4>
+
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-yellow-300">Interactivity Examples</h3>
+                        <h4 class="text-yellow-200"> JavaScript can be used to:</h4>
+                        <ul class="list-disc pl-10 my-5 text-yellow-100">
+                            <li class="my-5">Show or hide content</li>
+                            <li>Validate forms</li>
+                            <li class="my-5">Create sliders and dropdown menus</li>
+                            <li>Update content without reloading the page</li>
+                        </ul>
+                        <h4 class="conclusion text-yellow-200">These features make websites dynamic and user-friendly.
+                        </h4>
+                    </div>
+                    <div class="mt-5 gap-10">
+                        <h3 class="text-2xl my-5 text-yellow-300">DOM Basics</h3>
+                        <h4 class="text-yellow-100">The DOM (Document Object Model) represents the structure of a
+                            webpage as objects. JavaScript can access
+                            and modify these objects to change content, styles, and behavior dynamically.</h4>
+
+                        <h4 class="conclusion mt-5 text-yellow-200">DOM manipulation is a core concept in interactive
+                            web development.</h4>
+                    </div>
+                </div>
+
+
+
+            </section>
+        </div>
+
+        <!-- //resources -->
+        <div class="hidden lg:block">
+            <section id="resources" class="main-text ">
+
+                <div>
+                    <h1 class="main-heading  text-teal-600 text-shadow-sm text-shadow-teal-100">Resources</h1>
+
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-teal-400">Useful Learning Links</h3>
+                        <h4 class="conclusion text-teal-100">These websites provide reliable tutorials and documentation
+                            for learning web development:</h4>
+                        <ul class="list-disc pl-10 my-5 text-teal-50">
+                            <li class="my-5">
+                                <ul>
+                                    <li>
+                                        MDN Web Docs
+                                    </li>
+                                    <li>
+                                        <a class="text-blue-500"
+                                            href="https://developer.mozilla.org">https://developer.mozilla.org</a>
+                                    </li>
+                                    <li>
+                                        Comprehensive and beginner-friendly documentation for HTML, CSS, and JavaScript.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="my-5">
+                                <ul>
+                                    <li>
+                                        W3Schools
+                                    </li>
+                                    <li>
+                                        <a class="text-blue-500"
+                                            href="https://www.w3schools.com">https://www.w3schools.com</a>
+                                    </li>
+                                    <li>
+                                        Easy explanations with examples and quick references.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="my-5">
+                                <ul>
+                                    <li>
+                                        freeCodeCamp
+                                    </li>
+                                    <li>
+                                        <a class="text-blue-500"
+                                            href="https://www.freecodecamp.org">https://www.freecodecamp.org</a>
+                                    </li>
+                                    <li>
+                                        Free interactive lessons and certifications for web development.
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-teal-400">Practice Platforms</h3>
+                        <h4 class="conclusion text-teal-100">Practicing regularly helps strengthen concepts and improve
+                            confidence:</h4>
+                        <ul class="list-disc pl-10 my-5 text-teal-50">
+                            <li class="my-5">
+                                <ul>
+                                    <li>
+                                        freeCodeCamp Practice
+                                    </li>
+                                    <li>
+                                        <a class="text-blue-500"
+                                            href="https://www.freecodecamp.org/learn">https://www.freecodecamp.org/learn</a>
+                                    </li>
+                                    <li>
+                                        Hands-on coding challenges and projects.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="my-5">
+                                <ul>
+                                    <li>
+                                        CodePen
+                                    </li>
+                                    <li>
+                                        <a class="text-blue-500" href="https://codepen.io">https://codepen.io</a>
+                                    </li>
+                                    <li>
+                                        Online editor to practice HTML, CSS, and JavaScript together.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="my-5">
+                                <ul>
+                                    <li>
+                                        JSFiddle
+                                    </li>
+                                    <li>
+                                        <a class="text-blue-500" href="https://jsfiddle.net">https://jsfiddle.net</a>
+                                    </li>
+                                    <li>
+                                        Useful for testing JavaScript and small experiments.
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center">
+                    <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-teal-300"
+                        src="../public/images/resource.webp" alt="image">
+                </div>
+
+            </section>
+        </div>
+        <div class="block lg:hidden">
+            <section id="resourcesMobile" class="main-text ">
+
+                <div>
+                    <h1 class="main-heading  text-teal-600 text-shadow-sm text-shadow-teal-100">Resources</h1>
+                    <div class="p-2  w-full max-w-4xl h-auto flex justify-center items-center mt-5">
+                        <img class="object-contain w-full rounded-2xl max-w-2xl h-auto shadow-2xl shadow-teal-300"
+                            src="../public/images/resource.webp" alt="image">
+                    </div>
+
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-teal-400">Useful Learning Links</h3>
+                        <h4 class="conclusion text-teal-100">These websites provide reliable tutorials and documentation
+                            for learning web development:</h4>
+                        <ul class="list-disc pl-10 my-5 text-teal-50">
+                            <li class="my-5">
+                                <ul>
+                                    <li>
+                                        MDN Web Docs
+                                    </li>
+                                    <li>
+                                        <a class="text-blue-500"
+                                            href="https://developer.mozilla.org">https://developer.mozilla.org</a>
+                                    </li>
+                                    <li>
+                                        Comprehensive and beginner-friendly documentation for HTML, CSS, and JavaScript.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="my-5">
+                                <ul>
+                                    <li>
+                                        W3Schools
+                                    </li>
+                                    <li>
+                                        <a class="text-blue-500"
+                                            href="https://www.w3schools.com">https://www.w3schools.com</a>
+                                    </li>
+                                    <li>
+                                        Easy explanations with examples and quick references.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="my-5">
+                                <ul>
+                                    <li>
+                                        freeCodeCamp
+                                    </li>
+                                    <li>
+                                        <a class="text-blue-500"
+                                            href="https://www.freecodecamp.org">https://www.freecodecamp.org</a>
+                                    </li>
+                                    <li>
+                                        Free interactive lessons and certifications for web development.
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="mt-5 gap-10">
+                        <h3 class="list-heading text-teal-400">Practice Platforms</h3>
+                        <h4 class="conclusion text-teal-100">Practicing regularly helps strengthen concepts and improve
+                            confidence:</h4>
+                        <ul class="list-disc pl-10 my-5 text-teal-50">
+                            <li class="my-5">
+                                <ul>
+                                    <li>
+                                        freeCodeCamp Practice
+                                    </li>
+                                    <li>
+                                        <a class="text-blue-500"
+                                            href="https://www.freecodecamp.org/learn">https://www.freecodecamp.org/learn</a>
+                                    </li>
+                                    <li>
+                                        Hands-on coding challenges and projects.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="my-5">
+                                <ul>
+                                    <li>
+                                        CodePen
+                                    </li>
+                                    <li>
+                                        <a class="text-blue-500" href="https://codepen.io">https://codepen.io</a>
+                                    </li>
+                                    <li>
+                                        Online editor to practice HTML, CSS, and JavaScript together.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="my-5">
+                                <ul>
+                                    <li>
+                                        JSFiddle
+                                    </li>
+                                    <li>
+                                        <a class="text-blue-500" href="https://jsfiddle.net">https://jsfiddle.net</a>
+                                    </li>
+                                    <li>
+                                        Useful for testing JavaScript and small experiments.
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </section>
+        </div>
 
     </div>
 
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

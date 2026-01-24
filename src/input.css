@@ -23,7 +23,7 @@
     { @apply sm:mt-2 mt-20 sm:p-20 p-4 min-h-screen min-w-screen flex-col justify-center items-center scroll-mt-20 grid lg:grid-cols-2 gap-5 } 
 
     .main-heading{
-       @apply text-2xl text-center sm:text-left sm:text-4xl font-extrabold
+       @apply text-2xl text-center lg:text-left sm:text-4xl font-extrabold
     }
 
     .sub-heading{
